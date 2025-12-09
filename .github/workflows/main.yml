@@ -28,5 +28,5 @@ jobs:
       - name: Executing the Job
         shell: bash
         run: |
-          ./hyperexecute --user ${{ github.event.inputs.username }} --key ${{ github.event.inputs.accessKey }} --download-artifacts --config yaml/autosplit_linux.yaml
+          ./hyperexecute --user ${{ github.event.inputs.username }} --key ${{ github.event.inputs.accessKey }} --download-artifacts --config main.yaml --verbose
           echo "Test completion"
